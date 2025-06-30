@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Juego del Alfabeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">🎯 Juego del Alfabeto</h1>
+        
+        <!-- Controles compactos arriba -->
+        <div class="top-controls">
+            <!-- Temática con botón en línea -->
+            <div class="theme-section">
+                <div class="theme-label">🎯 Temática:</div>
+                <div class="theme-line">
+                    <div class="theme-text" id="themeText">Cargando temática...</div>
+                    <button id="newThemeBtn" class="new-theme-btn">🎲 Nueva</button>
+                </div>
+            </div>
+            
+            <!-- Controles de tiempo en línea -->
+            <div class="game-controls">
+                <label for="timeInput">Tiempo:</label>
+                <input type="number" id="timeInput" min="1" max="999" value="10" class="time-input">
+                <span class="input-suffix">seg</span>
+                <button id="startBtn" class="btn btn-start">START</button>
+                <button id="resetBtn" class="btn btn-reset">RESET</button>
+            </div>
+        </div>
+        
+        <!-- Círculo de letras -->
+        <div class="circle-container">
+            <div class="letters-circle" id="lettersCircle">
+                <!-- Las letras se generarán dinámicamente con JavaScript -->
+            </div>
+            
+            <!-- Temporizador en el centro -->
+            <div class="timer-container">
+                <div class="timer" id="timer">00</div>
+                <div class="timer-label">segundos</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
